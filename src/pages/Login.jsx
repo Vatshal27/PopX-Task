@@ -1,13 +1,14 @@
 import { useState } from "react";
 import PhoneFrame from "../components/PhoneFrame";
 import BottomNav from "../components/BottomNav";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-
+    const navigate = useNavigate();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isFormValid = emailPattern.test(email) && password.length >= 6;
     const handleLogin = () => {
@@ -23,7 +24,7 @@ function Login() {
         }
 
         setError("");
-        alert("Login successful");
+        navigate("/profile");
     };
 
     return (

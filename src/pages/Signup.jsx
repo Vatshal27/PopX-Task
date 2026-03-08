@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PhoneFrame from "../components/PhoneFrame";
 import BottomNav from "../components/BottomNav";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
 
@@ -14,6 +15,8 @@ function Signup() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phonePattern = /^[0-9]{10}$/;
     const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const navigate = useNavigate();
+
     const handleSignup = () => {
 
         const newErrors = {};
@@ -38,7 +41,9 @@ function Signup() {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
+            navigate("/profile");
             alert("Account created successfully");
+
         }
     };
 

@@ -206,7 +206,8 @@ body {
 }
 
 .btn-disabled {
-    opacity: 0.5;
+    background: #cfcfcf;
+    color: #ffffff;
     cursor: not-allowed;
 }
 
