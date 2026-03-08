@@ -1,17 +1,78 @@
-# React + Vite
+A responsive authentication interface built with React and Vite that demonstrates a simple onboarding flow including welcome, login, signup, and profile screens.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project focuses on clean UI structure, form validation, and component-based layout.
 
-Currently, two official plugins are available:
+Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deployed on Vercel
+https://your-project-url.vercel.app
 
-## React Compiler
+Screens
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+The application contains four screens:
 
-## Expanding the ESLint configuration
+Welcome Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PopX-Task
+Entry screen with options to create an account or login.
+
+Login Page
+
+Email and password authentication form.
+
+Button activates only when inputs are valid.
+
+Redirects to profile page after successful login.
+
+Signup Page
+
+User registration form with validation.
+
+Includes:
+
+Full Name
+
+Phone Number
+
+Email
+
+Password
+
+Company Name
+
+Agency selection (Yes / No)
+
+Field-level error handling.
+
+Profile Page
+
+Displays basic user information.
+
+Profile avatar with camera overlay icon.
+
+Tech Stack
+
+React
+
+Vite
+
+React Router
+
+CSS
+
+Features
+
+Component-based UI architecture
+
+Responsive mobile-style layout
+
+Input validation
+
+Dynamic button states (enabled / disabled)
+
+Error messages per field
+
+Navigation using React Router
+
+Avatar display with overlay icon
+
+Simple onboarding flow
